@@ -5,7 +5,8 @@ if __name__ == '__main__':
         end_string = "-" * (int(remaning_spaces / 2))
         return front_string, end_string
     def welcome_str(M):
-        final_string = front_end_strings(M - 7)[0] + "welcome" + front_end_strings(M - 7)[1]
+        //final_string = front_end_strings(M - 7)[0] + "welcome" + front_end_strings(M - 7)[1]
+        print 'WELCOME'.center(M,'-')
         return final_string
     def pattern_str(M, num):
         no_of_patterns = num
