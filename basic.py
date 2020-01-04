@@ -73,8 +73,125 @@ In case of input data being supplied to the question, it should be assumed to be
 #     print(round(Q),end=",")
 
 """
+Question 7
+Level 2
 
+Question:
+Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the 
+array should be i*j.
+Note: i=0,1.., X-1; j=0,1,¡­Y-1.
+Example
+Suppose the following inputs are given to the program:
+3,5
+Then, the output of the program should be:
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
 
+Hints:
+Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
+
+"""
+# if __name__ == '__main__':
+#     X, Y = map(int,input().split(","))
+#     main_list = []
+#     for i in range(0,X):
+#          main_list.append([i*j for j in range(0,Y)])
+#     print(main_list)
+#
+
+"""
+Question 8
+Level 2
+
+Question:
+Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated
+sequence after sorting them alphabetically.
+Suppose the following input is supplied to the program:
+without,hello,bag,world
+Then, the output should be:
+bag,hello,without,world
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
 
 """
 
+# if __name__ == '__main__':
+#     words = input().split(",")
+#     words.sort()
+#     print(",".join(words))
+
+
+"""
+Question 9
+Level 2
+
+Question£º
+Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+Suppose the following input is supplied to the program:
+Hello world
+Practice makes perfect
+Then, the output should be:
+HELLO WORLD
+PRACTICE MAKES PERFECT
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+"""
+
+# if __name__ == '__main__':
+#     lines = []
+#     while True:
+#         s = input()
+#         if s == "":
+#             break
+#         else:
+#             lines.append(s.upper())
+#     for sentence in lines:
+#         print(sentence)
+
+"""
+Question 10
+Level 2
+
+Question:
+Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+Suppose the following input is supplied to the program:
+hello world and practice makes perfect and hello world again
+Then, the output should be:
+again and hello makes perfect practice world
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+
+"""
+
+# if __name__ == '__main__':
+#     words = input().split()
+#     words = list(set(words))
+#     words.sort()
+#     print(" ".join(words))
+#
+"""
+Question 11
+Level 2
+
+Question:
+Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
+Example:
+0100,0011,1010,1001
+Then the output should be:
+1010
+Notes: Assume the data is input by console.
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+"""
+#
+# if __name__ == '__main__':
+#     numbers = input().split(",")
+#     for x in numbers:
+#         dec_num = int(x,base=2)
+#         if dec_num % 5 == 0:
+#             print(x)
