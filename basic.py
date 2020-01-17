@@ -195,3 +195,97 @@ In case of input data being supplied to the question, it should be assumed to be
 #         dec_num = int(x,base=2)
 #         if dec_num % 5 == 0:
 #             print(x)
+
+"""
+Question 12
+Level 2
+
+Question:
+Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+"""
+# if __name__ == '__main__':
+#     final_list = []
+#     flag = False
+#     for x in range(1000, 3001):
+#         digits = str(x)
+#         for d in digits:
+#             if int(d) % 2 == 0:
+#                 flag = True
+#             else:
+#                 flag = False
+#         if flag:
+#             final_list.append(x)
+#     print(final_list)
+
+
+
+"""
+Question 13
+Level 2
+
+Question:
+Write a program that accepts a sentence and calculate the number of letters and digits.
+Suppose the following input is supplied to the program:
+hello world! 123
+Then, the output should be:
+LETTERS 10
+DIGITS 3
+"""
+#
+# if __name__ == '__main__':
+#     sentence = input()
+#     letter_count = 0
+#     digit_count = 0
+#     for alpha in sentence:
+#         if alpha.isalpha():
+#             letter_count = letter_count + 1
+#         elif alpha.isdigit():
+#             digit_count = digit_count + 1
+#     print("LETTERS {0}".format(letter_count))
+#     print("DIGITS {0}".format(digit_count))
+
+"""
+Question 15
+Level 2
+
+Question:
+Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
+Suppose the following input is supplied to the program:
+9
+Then, the output should be:
+11106
+"""
+
+"""
+
+Question 17
+Level 2
+
+Question:
+Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
+D 100
+W 200
+
+D means deposit while W means withdrawal.
+Suppose the following input is supplied to the program:
+D 300
+D 300
+W 200
+D 100
+Then, the output should be:
+"""
+
+# if __name__ == '__main__':
+#     net_amount = 0
+#     while True:
+#         s = input()
+#         if not s:
+#             break
+#         trans, amount = s.split()
+#         if trans == 'D':
+#             net_amount = net_amount + int(amount)
+#         elif trans == 'W':
+#             net_amount = net_amount - int(amount)
+#     print(net_amount)
