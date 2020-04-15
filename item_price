@@ -1,0 +1,20 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import OrderedDict
+import re
+
+ordered_dictionary = OrderedDict()
+no_of_items = input()
+for _ in range(0,int(no_of_items)):
+    item = input()
+    pattern = r"([A-Z ]+)([0-9]+)"
+    result = re.search(pattern,item)
+    itemname = (result.group(1)).strip()
+    price = int((result.group(2)).strip())
+    # print(itemname + "--" + price)
+    if itemname in ordered_dictionary.keys():
+        ordered_dictionary[itemname] += price
+    else:
+        ordered_dictionary[itemname] = price
+
+for k,y in ordered_dictionary.items():
+        print(k + " " + str(y))
